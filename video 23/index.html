@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property in CSS</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box{
+            border: 2px solid blue;
+            display:inline-block;
+            margin: 10px; /* cannot set width also, margin and padding not to upper boundary when display type is inline*/
+            padding:20px;
+            width: 300px;
+        }
+        .box1{
+            /* display: none; deletes element and occupied space*/
+            /* visibility:hidden; deletels element and not occupied space*/
+        }
+        #box2{
+            border: 5px solid red;
+            display: inline-flex;      /*flex used to center content*/
+            justify-content: center; 
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        This is a box
+    </div>
+    <div class="box">
+        This is another box
+    </div>
+    <div id="box2">Let me flex it hahahahahaha</div>
+    <span>
+        This is my favourite
+    </span>
+    <span>
+        box
+    </span>
+</body>
+</html>

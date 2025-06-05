@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Entry Form</title>
+    <meta name="description" content="Studnet data entry form using basic html">
+</head>
+<body>
+    <h1><center>Student entry form</center></h1>
+    <form action="" method="post">
+        <div>
+
+            <label for="student name">Student Name</label>
+            <input type="text" name="student name" id="student name" placeholder="please enter your name">
+        </div>
+        <div>
+
+            <label for="email">Email Address</label>
+            <input type="text" id="email" name="email" placeholder="abc@gmail.com">
+        </div>
+        <div>
+            <label for="">Gender: </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="">Language:</label>
+            <input type="checkbox" id="english" name="language" value="english">
+            <label for="english">English</label>
+            <input type="checkbox" id="tamil" name="language" value="tamil">
+            <label for="tamil">tamil</label>
+            <input type="checkbox" id="hindi" name="language" value="hindi">
+            <label for="hindi">hindi</label>
+            <input type="checkbox" id="malyalam" name="language" value="malyalam">
+            <label for="malyalam">malyalam</label>
+            <input type="checkbox" id="Punjabi" name="language" value="Punjabi">
+            <label for="Punjabi">Punjabi</label>
+            <input type="checkbox" id="telugu" name="language" value="telugu">
+            <label for="telugu">telugu</label>
+            <input type="checkbox" id="kannad" name="language" value="kannad">
+            <label for="kannad">kannad</label>
+
+        </div>
+        <div>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option value="Panipat">Panipat</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Kanpur">Kanput</option>
+                <option value="Ahemdabad">Ahemdabad</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Patna">Patna</option>
+                <option value="Ranchi">Ranchi</option>
+            </select>
+        </div>
+        <div>
+            <div>
+
+            <label for="comments">Comments</label>
+            </div>
+             <textarea placeholder="Enter comments" name="comments" id="comments" rows="5" cols="25"></textarea>
+        </div>
+        <div>
+            <button>Submit</button>
+            <button>Clear</button>
+        </div>
+    </form>
+</body>
+</html>
