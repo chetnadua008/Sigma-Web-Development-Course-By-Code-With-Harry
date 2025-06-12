@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav .logo img{
+    height: 25px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: "segoe UI";
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:30px;
+    align-items: center;
+
+}
+ul li span img{
+    height: 8px;
+}

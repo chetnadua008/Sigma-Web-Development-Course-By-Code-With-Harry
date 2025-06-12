@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: rgb(245, 129, 197);
+            height: 10vh;
+            width: 100vw;
+            position: sticky;
+            top:0px;
+            left:0px;
+        }
+        .main{
+            box-sizing: border-box;
+            background-color: green;
+            height: 85vh;
+            width:98vw;
+            margin: 10px;
+            padding-left: 70px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+        }
+        .box1{
+            height: 100%;
+            width:40%;
+            background-color: rgb(247, 120, 120);
+        }
+        .box2{
+            height: 100%;
+            width:40%;
+            background-color: rgb(59, 152, 228);
+            margin-left: 200px;
+        }
+        body{
+            background-color: rgb(38, 37, 37);
+        }
+        .welcome{
+            border:2px solid white;
+            outline: 2px solid white;
+            outline-offset: 2px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 50px;
+            height: 200px;
+            font-size:80px;
+            margin:20px;
+            padding:10px;
+        }
+        img{
+            position: fixed;
+            bottom: 0px;
+            right:0px;
+
+        }
+        footer{
+            background-color: blueviolet;
+            height: 100px;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div class="main">
+        <div class="box1">
+
+        </div>
+        <div class="box2">
+
+        </div>
+        <div class="logo"><img src="logo.png" alt="nittlogo" height="150px"></div>
+    </div>
+    <div class="main2">
+        <div class="welcome">
+            Welcome to Sigma Web Development Course
+        </div>
+    </div>
+    <footer></footer>
+</body>
+</html>

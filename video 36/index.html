@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiColor CSS Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap');
+    </style>
+    <style>
+        :root{
+            --primary-color:rgb(10, 69, 23);
+            --text-color:white;
+            --secondary-color:rgb(154, 227, 182);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: var(--text-color)
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            font-family: "Baloo Bhaijaan 2", sans-serif;    
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About Us</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">Services</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

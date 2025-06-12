@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border:2px solid brown;
+            background-color: antiquewhite;
+            height: 80vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            align-items: center;
+            justify-items: center;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .box1{
+            text-align: center;
+            align-content: center;
+            transform: rotateY(45deg);
+        }
+        .box2{
+            transform: scale(70%);
+        }
+        .box3{
+            transform: scaleX(1.5);
+        }
+        .box4{
+            transform: scaleY(1.5);
+        }
+        .box5{
+            transform: rotate(90deg);
+        }
+        .box6{
+            transform: rotate(0.1turn);
+        }
+        .box7{
+             grid-column: 3/4;
+            grid-row: 2/3;
+            transform: translate(50px,50px);
+        }
+        .box8{
+            transform-origin: 0% 0%;
+            transform: rotate(20deg);
+        }
+        .overlaps{
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">45 deg rotate around y axis</div>
+        <div class="box box2">Scale 70%</div>
+        <div class="box box3">Scale X 1.5</div>
+        <div class="box box4">Scale Y 1.5</div>
+        <div class="box box5">Rotate 90</div>
+        <div class="box box6">0.1 turn</div>
+        <div class="box box7">Translated 50px 50px</div>
+        <div class="box box8">Rotates about 0,0</div>
+        <div class="box overlaps">original</div>
+    </div>
+</body>
+</html>

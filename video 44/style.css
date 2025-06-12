@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "segoe UI";
+}
+
+
+nav .logo img {
+    height: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "segoe UI";
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+
+}
+
+ul li span img {
+    height: 8px;
+}
+
+/* main content */
+.main {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .main{
+    grid-template-columns: 280px;
+  }
+}
+.main .lang {
+    background-color: rgb(242, 245, 245);
+    height: 180px;
+    justify-items: center;
+    display: grid;
+    grid-template-rows: 1fr 0.4fr 0.2fr 0.2fr 0.2fr;
+    align-items: center;
+    padding-top: 15px;
+
+}
+/* @media only screen and (max-width: 600px) {
+  .main .lang{
+    background-color: purple;
+}
+} */
+
+.download64Bit {
+    height: 103%;
+    width: 55%;
+    background-color: rgb(93, 177, 93);
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    grid-row: 2/3;
+}
+
+.box1 {
+    text-align: center;
+    font-size: 9px;
+}
+
+.box2 {
+    font-size: 6px;
+}
+
+.box {
+    align-self: normal;
+    font-weight: bolder;
+}
+
