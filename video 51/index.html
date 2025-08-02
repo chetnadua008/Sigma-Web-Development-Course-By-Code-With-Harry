@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 80vw;
+            background-color: rgb(4, 17, 88);
+            position: absolute;
+        }
+        .circle{
+            align-content: center;
+            text-align: center;
+            font-size: 16px;
+            height: 50px;
+            width: 50px;
+            border-radius: 75px;
+            background-color: whitesmoke;
+            position:relative;
+            animation: BounceX 2s linear infinite, BounceY 0.5s ease-out alternate infinite ;
+            animation-play-state:running;
+            
+        }
+        @keyframes BounceX{
+            from{
+                left:0px;
+            }
+            to{
+                left:100%;
+            }
+        }
+        @keyframes BounceY {
+            from{
+                top:0px;
+            }
+            to{
+                top:500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            Bouncing Ball
+        </div>
+    </div>
+</body>
+</html>

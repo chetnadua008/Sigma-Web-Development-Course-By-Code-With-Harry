@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(40, 105, 105);
+            margin:auto;
+            justify-items: center;
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            border-radius: 100px ;
+            animation:
+             /* Rotate 1s ease-in-out infinite alternate , */
+                Bounce 1s cubic-bezier(0.98, 0.03, 0.58, 1)  infinite alternate ;
+            align-content: center;
+            font-size: 15px;
+            text-align: center;
+        }
+        @keyframes Bounce {
+            from{
+
+            }
+            to{
+                transform: translateY(300px);
+            }
+        }
+        @keyframes Rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            50%{
+                transform: rotate(30deg);
+            }
+            100%{
+                transform: rotate(60deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle">Bouncing<br>Ball</div>
+    </div>
+</body>
+</html>

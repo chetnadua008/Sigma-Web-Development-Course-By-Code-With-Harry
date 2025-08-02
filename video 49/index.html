@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: beige;
+            border: 2px solid black;
+        }
+        .container img{
+            height: 300px;
+            width: 300px;
+            /* object-fit: cover;
+            object-position: center center; */
+
+            object-fit: contain;
+            /* object-position: 10px 10px; */
+
+            border: 2px solid red;
+
+        }
+        .container2{
+            padding:10px;
+            border:5px dashed blue;
+            height: 400px;
+            width:500px;
+            /* width: 1000px; */
+            background-image: url("image\ copy.png");
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+            background-clip: padding-box        ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" alt="">
+    </div>
+    
+        <div class="container2">
+
+        </div>
+
+</body>
+</html>
